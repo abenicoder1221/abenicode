@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Abeni's Achievements</title>
+   <link rel="stylesheet" href="Style_achievements.css">
+</head>
+<body>
+  <div class="ccontainer">
+  <img src="2a afronile logo.png" class="img1">
+  <h2>What did he succeeded? </h2>
+   <nav class="nav1">
+    <ul>
+      <li><a href="Home.html"> Home</a></li>
+      <li><a href="Achievements.html"> Achievements</a></li>
+      <li><a href="Projects.html"> My plans</a></li>
+      <li><a href="Contact.html"> Contact</a></li>
+      <li><a href="About_us.html"> More</a></li>
+    </ul>
+   </nav>
+   <main>
+    <h5>I tried to explain a little about my easy but big (for me) Achievements.</h5>
+    <section class="sec1achieve">
+      <p>As i told you i am student and beside that i am learning <em>Programing</em> by myself.And i get 3 certificates from different apps and websites like <a href="https://www.sololearn.com/en/" target="_blank">solo leaen</a>,<a href="https://codeliber.com/" target="_blank">codeliber</a> and <a href="https://www.udacity.com/">Udacity</a></p>
+    </section>
+    </main>
+    <div class="all">
+  <div class="scroll-item"><img src="Solo learn certificate.jpg"></div>
+  <div class="scroll-item"><img src="Codeliber certificate.jpg"></div>
+  <div class="scroll-item"><img src="school cer.jpg"></div>
+  
+  <div class="scroll-item"><img src="Solo learn certificate.jpg"></div>
+  <div class="scroll-item"><img src="Codeliber certificate.jpg"></div>
+  <div class="scroll-item"><img src="school cer.jpg"></div>
+
+  <div class="scroll-item"><img src="Solo learn certificate.jpg"></div>
+  <div class="scroll-item"><img src="Codeliber certificate.jpg"></div>
+  <div class="scroll-item"><img src="school cer.jpg"></div>
+</div>
+<script>
+  const el = document.querySelector('.all');
+
+// 1. Start the user in the middle group so they can swipe left OR right immediately
+window.onload = () => {
+  const startPoint = el.scrollWidth / 3;
+  el.scrollLeft = startPoint;
+};
+
+el.addEventListener('scroll', () => {
+  const scrollPos = el.scrollLeft;
+  const scrollWidth = el.scrollWidth;
+  const third = scrollWidth / 3;
+
+  // 2. If user swipes too far right, jump back to middle
+  if (scrollPos >= third * 2) {
+    el.scrollLeft = scrollPos - third;
+  }
+  
+  // 3. If user swipes too far left, jump forward to middle
+  if (scrollPos <= 0) {
+    el.scrollLeft = third;
+  }
+});
+
+</script>
+<section class="describe"><p> And i am trying to improve myself.If someone just help me i know
+who i am i can reach to my goal.I have a big <a href="dream.html" >dream</a>.</p>
+<p>I think there is something that always pushes me to computer world.I always
+wander how computers do this all this in this speed without any mistake ? oh i
+leave this question for everyone who is interested about  technology.<br>
+My interest in computer science started when I began wondering how websites and
+apps are built. That curiosity quickly turned into a passion, and since then
+I’ve been learning programming and exploring how software works behind the
+scenes. <br>Right now, I’m focusing on web development, learning technologies like
+HTML, CSS, and JavaScript, and building small projects to practice my
+skills.<br>
+I enjoy experimenting with code, solving problems, and slowly turning ideas into
+real things on the internet. Every project I build teaches me something new, and
+that’s what makes programming exciting for me.<br>
+My long-term goal is to become a software engineer and computer scientist who
+creates useful technology and contributes to innovative ideas that can help
+people and improve lives.<br>
+This website is my small corner of the internet where I share what I’m learning, the projects I build, and my progress as I continue my journey into the world of programming and computer science.</p>
+</section>
+</div>
+<footer>
+     <section class="social">
+       <a href="https://github.com/born-to-code-glitch/Abenie-s-web"><img
+       src="Github.png"></a>
+       <a
+       href="https://www.instagram.com/abeni_coder?igsh=MTczZTBldmZwYWxweQ=="><img
+       src="instagram.png"> </a>
+       <a href="https://web.telegram.org/a/@abenicoder"><img src="Telegram.png"></a>
+       <a href="https://www.facebook.com/profile.php?id=61585801395203"><img
+       src="Facebook.png">
+       <a href="mailto:abenicoder1221@gmail.com" target="_blank"><img
+       src="Gmail.png"></a></section>
+     <p>© 2026 Abenezer Gobena Geremew</p>
+     <p>“Learning, Building, Solving”</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body{
+  margin-left: 10px;
+  background-image: url("Bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+h2{
+  text-align: center;
+  color: dodgerblue;
+}
+.nav1 ul{
+  list-style-type:none;
+  padding: 0px;
+  margin: 10px;
+  background-color: maroon;
+}
+.nav1 a{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.nav1 a:hover{
+  background-color: tomato;
+}
+.img1{
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sec1achieve{
+  font-size: 15px;
+  margin-left: 20px;
+  font-family: fantasy,serif;
+}
+.all {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+  padding: 20px;
+  /* Hide scrollbar for Chrome/Safari */
+  -webkit-overflow-scrolling: touch; 
+}
+
+.all::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+  flex-shrink: 0;
+  width: 80%; /* Show most of the image */
+
+}
+section p a{
+  text-decoration: none;
+  color: blue;
+}
+
+.scroll-item img {
+  width: 100%;        /* Fills the width of the container */
+  height: 250px;      /* Set a fixed height (adjust this number to your liking) */
+  object-fit: cover;  /* This crops the image to fill the box without stretching it */
+  border-radius: 20px;
+  border: 1px solid green;
+  display: block;
+}
+p{
+  font-size: 15px;
+  margin-left: 20px;
+  font-family: fantasy,serif;
+  
+}
+.describe{
+  box-shadow: 8px 8px 8px 8px #aaa;
+  border-radius: 14px
+}
+
+footer{
+  margin: 30px;
+  background-color: slateBlue;
+  font-family: monospace;
+  border-radius: 12px ;
+  text-align: center;
+  padding: 20px;
+  color: rgb(115,226,246);
+  box-shadow: 10px 10px 10px slateBlue;
+  border: 0.8px solid blue;
+}
+footer a{
+  color:rgb(174,202,132);
+  
+}
+.social img{
+  height: 40px;
+  width: 40px;
+}
+
+* {
+    box-sizing: border-box; /* ensures padding/margin don’t break layout */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;       /* container takes 90% of screen width */
+    max-width: 1200px; /* doesn’t stretch too much on big screens */
+    margin: 0 auto;    /* centers the container */
+}
+
+img.img1 {
+    max-width: 100%;  /* image scales on smaller screens */
+    height: auto;
+}
+
+/* Navbar */
+.nav1 ul {
+    display: flex;
+    flex-wrap: wrap;  /* wraps on smaller screens */
+    justify-content: center; /* centers the nav items */
+    padding: 0;
+    list-style: none;
+}
+
+.nav1 li {
+    margin: 10px;
+}
+
+/* Sections */
+.section1, main {
+    padding: 20px;
+}
+
+/* Footer social icons */
+footer .social a img {
+    width: 40px;       /* makes all icons same size */
+    height: auto;
+    margin: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* tablets */
+    h1 {
+        font-size: 28px;
+    }
+    .nav1 ul {
+        flex-direction: column; /* stack nav items */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) { /* mobile phones */
+    h1 {
+        font-size: 22px;
+    }
+    .section1 p, main h3 {
+        font-size: 16px;
+    }
+    footer .social a img {
+        width: 30px;
+    }
+}
+

@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box; /* ensures padding/margin don’t break layout */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;       /* container takes 90% of screen width */
+    max-width: 1200px; /* doesn’t stretch too much on big screens */
+    margin: 0 auto;    /* centers the container */
+}
+
+img.img1 {
+    max-width: 100%;  /* image scales on smaller screens */
+    height: auto;
+}
+
+/* Navbar */
+.nav1 ul {
+    display: flex;
+    flex-wrap: wrap;  /* wraps on smaller screens */
+    justify-content: center; /* centers the nav items */
+    padding: 0;
+    list-style: none;
+}
+
+.nav1 li {
+    margin: 10px;
+}
+
+/* Sections */
+.section1, main {
+    padding: 20px;
+}
+
+/* Footer social icons */
+footer .social a img {
+    width: 40px;       /* makes all icons same size */
+    height: auto;
+    margin: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* tablets */
+    h1 {
+        font-size: 28px;
+    }
+    .nav1 ul {
+        flex-direction: column; /* stack nav items */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) { /* mobile phones */
+    h1 {
+        font-size: 22px;
+    }
+    .section1 p, main h3 {
+        font-size: 16px;
+    }
+    footer .social a img {
+        width: 30px;
+    }
+}
+
+body{
+  background-image: url("Bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+em1{
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #aaa;
+  color:DodgerBlue ;
+  padding: none;
+}
+h1{
+  font-family: cursive;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline DodgerBlue 1%;
+}
+.nav1 ul{
+  list-style-type:none;
+  padding: 0px;
+  margin: 10px;
+  background-color: maroon;
+}
+.nav1 a{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.nav1 a:hover{
+  background-color: tomato;
+}
+.em2{
+  font-size:1px;
+}
+main{
+  margin-left: 20px;
+}
+h3{
+  font-family: fantasy;
+}
+.img1{
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer{
+  margin-left: 10px;
+  background-color: slateBlue;
+  font-family: monospace;
+  border-radius: 12px ;
+  text-align: center;
+  padding: 20px;
+  color: rgb(115,226,246)
+}
+footer a{
+  color:rgb(174,202,132)
+}
+.social img{
+  height: 40px;
+  width: 40px;
+}
+iframe{
+  border-radius: solid 2px black;
+}
